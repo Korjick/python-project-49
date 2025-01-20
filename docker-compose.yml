@@ -1,0 +1,7 @@
+services:
+  alp:
+    image: python:3.10.16-bookworm
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./:/home/python-project-49/
