@@ -17,7 +17,7 @@ def get_task_and_answer() -> (str, str):
 
     progression[hidden_index] = ".."
     return (f'What number is missing in the progression?\n'
-            f'Question: {progression}',
+            f'Question: {" ".join(str(el) for el in progression)}',
             str(hidden_value))
 
 
