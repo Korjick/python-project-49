@@ -4,12 +4,21 @@ from brain_games.cli import welcome_user
 from brain_games.scripts.utility import game
 
 
+def _is_prime(n: int) -> bool:
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+
 def get_task_and_answer() -> (str, str):
     num = random.randint(1, 100)
-    is_mod = num % 2 == 0
-    return (f'Answer "yes" if the number is even, otherwise answer "no".\n'
+    is_prime = _is_prime(num)
+    return (f'Answer "yes" if given number is prime. Otherwise answer "no".\n'
             f'Question: {num}',
-            'yes' if is_mod else 'no')
+            'yes' if is_prime else 'no')
 
 
 def main():

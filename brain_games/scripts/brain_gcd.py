@@ -4,20 +4,18 @@ from brain_games.cli import welcome_user
 from brain_games.scripts.utility import game
 
 
+def _gcd_euclid(a: int, b: int) -> int:
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+
 def get_task_and_answer() -> (str, str):
     num1 = random.randint(1, 100)
     num2 = random.randint(1, 100)
-    op = random.choice(['+', '-', '*'])
-    match op:
-        case '+':
-            res = num1 + num2
-        case '-':
-            res = num1 - num2
-        case '*':
-            res = num1 * num2
-    return (f'What is the result of the expression?\n'
-            f'Question: {num1} {op} {num2}',
-            str(res))
+    return (f'Find the greatest common divisor of given numbers.\n'
+            f'Question: {num1} {num2}',
+            str(_gcd_euclid(num1, num2)))
 
 
 def main():

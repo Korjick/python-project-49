@@ -6,3 +6,12 @@
 
 ### ASCIInema | Calc:
 [![asciicast](https://asciinema.org/a/699129.svg)](https://asciinema.org/a/699129)
+
+### ASCIInema | NOD:
+[![asciicast](https://asciinema.org/a/699134.svg)](https://asciinema.org/a/699134)
+
+### ASCIInema | Progression:
+[![asciicast](https://asciinema.org/a/699135.svg)](https://asciinema.org/a/699135)
+
+### ASCIInema | Prime:
+[![asciicast](https://asciinema.org/a/699136.svg)](https://asciinema.org/a/699136)
